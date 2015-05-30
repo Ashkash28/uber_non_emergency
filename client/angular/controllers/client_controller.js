@@ -1,3 +1,8 @@
-myApp.controller('bucketsController', function ($scope, $location, bucketFactory, $routeParams, localStorageService){
+myApp.controller('mapsController', function($scope, $location, mapFactory, $routeParams, localStorageService){
 	
+	$scope.something = function(){
+		mapFactory.other(function(data){
+
+		})
+	}
 });

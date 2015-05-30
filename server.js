@@ -31,7 +31,7 @@ passport.use(new uberStrategy({
 ));
 
 // require('./config/mongoose');
-// require('./config/routes')(app);
+require('./config/routes')(app);
 
 app.listen(8000, function()
 {
