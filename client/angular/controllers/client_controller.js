@@ -2,8 +2,9 @@ myApp.controller('mapsController', function($scope, $location, mapFactory, $rout
 
 	$scope.something = function(){
 		console.log('about to invoke factory function');
-		mapFactory.other(function(data){
-
+		mapFactory.login(function(data){
+			console.log('returned from factory');
 		})
 	}
+
 });
