@@ -20,10 +20,8 @@ app.use(express.static(path.join(__dirname, './client')));
 // {
 // 	res.render('view2');
 // })
-// console.log('hello1');
 require('./config/mongoose');
 require('./config/routes')(app);
-// console.log('hello2');
 
 app.listen(8000, function()
 {
