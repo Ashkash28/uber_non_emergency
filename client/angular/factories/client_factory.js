@@ -2,7 +2,7 @@ myApp.factory('mapFactory', function($http){
 	var factory = {};
 
 	factory.other = function(callback){
-		$http.get('/v1/products').success(function(data){
+		$http.get('/call').success(function(data){
 			// console.log('in factory', data);
 			console.log("success");
 		})

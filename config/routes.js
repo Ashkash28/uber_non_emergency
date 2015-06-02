@@ -1,9 +1,9 @@
 var controller = require('../server/controllers/server_controller');
 
-module.exports = function(app){
+module.exports = function(app, passport){
 	console.log('hi');
-	app.get('/call', function(req, res){
-		controller.get(req, res);
+	app.get('/call', passport.authenticate('uber'), function(req, res){
+		console.log('routes authenticated');
 	});
 
 	// app.get('/auth/uber/callback',
